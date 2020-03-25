@@ -24,6 +24,11 @@ class HangpersonApp < Sinatra::Base
   get '/new' do
     erb :new
   end
+
+  # A demo path
+  get '/demo' do
+    "<!DOCTYPE html><html><head></head><body><h1>Hello World</h1></body></html>"
+  end
   
   post '/create' do
     # NOTE: don't change next line - it's needed by autograder!
